@@ -1,15 +1,17 @@
-﻿namespace SparkNet.Common
+﻿using System.Collections.Generic;
+
+namespace SparkNet.Common
 {
     public interface IDocument
     {
-        void All();
+        IEnumerable<T> All<T>(string collection);
 
-        void Create();
+        void Create<T>(string collection, T document);
 
-        void ById(string id);
+        T ById<T>(string id);
 
-        void Update(bool shouldReplaceDocument = false);
+        void Update<T>(string collection, T document, bool shouldReplaceDocument = false);
 
-        void Delete();
+        void Delete(string id);
     }
 }

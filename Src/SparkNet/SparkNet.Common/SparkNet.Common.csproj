@@ -78,6 +78,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyWireup.cs" />
+    <Compile Include="Dtos\Databases\ICreateDatabase.cs" />
     <Compile Include="IArangoDb.cs" />
     <Compile Include="Dtos\Collections\CollectionKind.cs" />
     <Compile Include="Dtos\Collections\CollectionState.cs" />
@@ -100,7 +101,7 @@
     <Compile Include="ExternalWireup\Dependency.FlitBit.Wireup.cs" />
     <Compile Include="Dtos\Databases\IDatabase.cs" />
     <Compile Include="ICollections.cs" />
-    <Compile Include="IDatabase.cs" />
+    <Compile Include="IDatabaseManager.cs" />
     <Compile Include="IDocument.cs" />
     <Compile Include="IEdge.cs" />
     <Compile Include="IGraph.cs" />

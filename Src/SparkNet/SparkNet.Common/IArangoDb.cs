@@ -3,7 +3,7 @@
 
     public interface IArangoDb
     {
-        IDatabase Databases { get; }
+        IDatabaseManager Databases { get; }
 
         void Connect();
     }
